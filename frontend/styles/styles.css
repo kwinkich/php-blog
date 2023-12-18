@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;500;600;700&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    bottom: 0;
+}
+
+*::after,
+*::before {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+:focus,
+:active {
+    outline: none;
+}
+
+a:focus,
+a:active {
+    outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+    display: block;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -webkit-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+}
+
+a {
+    background-color: transparent;
+    text-decoration: none;
+}
+
+b,
+strong {
+    font-weight: bolder;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+img {
+    vertical-align: top;
+    border-style: none;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+    font-family: inherit;
+    font-size: 100%;
+    line-height: 1.15;
+    margin: 0;
+}
+
+input,
+button,
+textarea {
+    font-weight: inherit;
+}
+
+
+/*ROOT*/
+:root{
+    --acent-color-w: #ce92e3;
+    --white-w: #ffffff;
+    --bg-color-w: #0f1622;
+
+    --32px: 32px;
+    --24px: 24px;
+    --18px: 18px;
+    --16px: 16px;
+
+    --Montserrat: 'Montserrat', sans-serif;
+    --Open-Sans: 'Open Sans', sans-serif;
+
+
+    --regular: 400;
+    --medium: 500;
+    --semibold: 600;
+    --bold: 700;
+}
+
+/*GLOBAL*/
+.container {
+    max-width: 1370px;
+    margin: 0 auto;
+}
+
+body{
+    background-color: var(--bg-color-w);
+}
+
+/*HEADER*/
+.header {
+    margin-top: 40px;
+}
+.header__content {
+    font-family: var(--Montserrat);
+    display: flex;
+    justify-content: space-between;
+}
+.logo {
+    color: var(--white-w);
+    font-size: var(--24px);
+    font-weight: var(--semibold);
+    transition: all 0.3s ease-in-out;
+}
+.logo:hover{
+    color: var(--acent-color-w);
+}
+.header__menu {
+    display: flex;
+    gap: 15px;
+}
+
+.header__menu-item a {
+    font-size: var(--16px);
+    color: var(--white-w);
+    font-weight: var(--regular);
+    transition: all 0.3s ease-in-out;
+}
+
+.header__menu-item:hover a {
+    color: var(--acent-color-w);
+}
+
+
+/*POSTS*/
+
+.posts {
+    margin-top: 120px;
+}
+.posts__content {
+    display: flex;
+    justify-content: space-between;
+}
+.posts__block {
+}
+
+.posts__title{
+    font-size: var(--32px);
+    color: var(--white-w);
+    font-weight: var(--bold);
+    font-family: var(--Montserrat);
+    margin-bottom: 30px;
+}
+
+.post {
+    display: flex;
+    margin-bottom: 50px;
+    flex-direction: column;
+    max-width: 770px;
+    border: 2px solid var(--acent-color-w);
+    border-radius: 15px;
+    padding: 30px 35px;
+}
+
+.post__title {
+    font-size: var(--32px);
+    font-family: var(--Montserrat);
+    font-weight: var(--semibold);
+    color: var(--white-w);
+    margin-bottom: 15px;
+}
+.post__text {
+    font-size: var(--18px);
+    font-family: var(--Open-Sans);
+    font-weight: var(--regular);
+    color: var(--white-w);
+    margin-bottom: 25px;
+    line-height: 130%;
+}
+
+.post__link{
+    display: inline-block;
+    font-size: var(--18px);
+    background-color: var(--acent-color-w);
+    color: var(--bg-color-w);
+    font-family: var(--Montserrat);
+    font-weight: var(--semibold);
+    padding: 15px 50px;
+    transition: all 0.3s ease-in-out;
+}
+
+.post__link:hover{
+    background-color: var(--white-w);
+}
+
+
+
+
+.news__block {
+}
+
+.news__title{
+    font-size: var(--32px);
+    color: var(--white-w);
+    font-weight: var(--bold);
+    font-family: var(--Montserrat);
+    margin-bottom: 30px;
+}
+
+.new {
+    display: flex;
+    margin-bottom: 50px;
+    flex-direction: column;
+    max-width: 350px;
+    border: 2px solid var(--acent-color-w);
+    border-radius: 15px;
+    padding: 30px 35px;
+}
+
+.new__title {
+    font-size: var(--24px);
+    font-family: var(--Montserrat);
+    font-weight: var(--semibold);
+    color: var(--white-w);
+    margin-bottom: 15px;
+}
+.new__text {
+    font-size: var(--16px);
+    font-family: var(--Open-Sans);
+    font-weight: var(--regular);
+    color: var(--white-w);
+    margin-bottom: 25px;
+    line-height: 140%;
+}
+
+
+
+
+
