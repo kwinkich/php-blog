@@ -1,0 +1,68 @@
+@import '../styles/styles.css';
+
+
+:root{
+	--acent-color-w: #ce92e3;
+	--white-w: #ffffff;
+	--bg-color-w: #0f1622;
+
+	--32px: 32px;
+	--24px: 24px;
+	--18px: 18px;
+	--16px: 16px;
+
+	--Montserrat: 'Montserrat', sans-serif;
+	--Open-Sans: 'Open Sans', sans-serif;
+
+
+	--regular: 400;
+	--medium: 500;
+	--semibold: 600;
+	--bold: 700;
+}
+
+.create-news {
+	font-family: var(--Montserrat);
+}
+.create-news__content {
+	margin-top: 170px;
+}
+.title-news-block, .content-news-block {
+	max-width: 500px;
+	display: flex;
+	justify-content: space-between;
+}
+.title-news, .content-news {
+	font-size: var(--24px);
+	color: var(--white-w);
+	font-weight: var(--medium);
+	margin-right: 15px;
+}
+.title-news-input {
+	max-width: 150px;
+	min-width: 150px;
+	max-height: 30px;
+	min-height: 30px;
+	padding: 10px 70px 70px 10px;
+}
+.content-news-block {
+	margin-top: 30px;
+}
+
+.content-news-input {
+	max-width: 150px;
+	min-width: 150px;
+	max-height: 30px;
+	min-height: 30px;
+	padding: 10px 70px 70px 10px;
+}
+
+.upload-news-block{
+	margin-top: 45px;
+}
+
+.btn-news{
+	cursor: pointer;
+	outline: none;
+	border: none;
+}

@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href=".././styles/styles.css">
+    <link rel="stylesheet" href=".././styles/create-news.css">
     <title>Document</title>
 </head>
 
@@ -37,36 +39,27 @@
                 </div>
             </div>
         </header>
-        <main class="posts">
+        <main class="create-news">
             <div class="container">
-                <div class="posts__content">
-                    <div class="posts__block">
-                        <h1 class="posts__title">Recent posts about my life</h1>
-                        <div class="post">
-                            <h2 class="post__title"><?php echo $_POST['title']; ?></h2>
-                            <p class="post__text"><?php echo $_POST['content']; ?></p>
-                            <div class="post__link-block">
-                                <a href="#" class="post__link">See full persik</a>
-                            </div>
-                        </div>
+                <div class="create-news__content">
+                    <div class="title-news-block">
+                        <label class="title-news">Заголовок новости:</label>
+                        <textarea class="title-news-input" placeholder="Привет мир!"></textarea>
                     </div>
-                    <div class="news__block">
-                        <h1 class="news__title">Recent news</h1>
-                        <div class="new">
-                            <h2 class="new__title">Title</h2>
-                            <p class="new__text">new text hahahah lorem ipsum bla figa ti super mega kruti() Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, amet non debitis minus maxime magni.</p>
-                        </div>
+                    <div class="content-news-block">
+                        <label class="content-news">Содержание новости:</label>
+                        <textarea class="content-news-input" placeholder="Поведай этому миру что-то..."></textarea>
+                    </div>
+                    <div class="upload-news-block">
+                        <button class="post__link btn-news">Опубликовать новость!</button>
                     </div>
                 </div>
             </div>
         </main>
     </div>
     <?php
-        $posts = array(
-            array(
-                'Title' => $_POST['title']
-            )
-        )
+
     ?>
 </body>
+
 </html>

@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href=".././styles/styles.css">
+    <link rel="stylesheet" href=".././styles/create-post.css">
     <title>Document</title>
 </head>
 
@@ -37,36 +39,27 @@
                 </div>
             </div>
         </header>
-        <main class="posts">
+        <main class="create-post">
             <div class="container">
-                <div class="posts__content">
-                    <div class="posts__block">
-                        <h1 class="posts__title">Recent posts about my life</h1>
-                        <div class="post">
-                            <h2 class="post__title"><?php echo $_POST['title']; ?></h2>
-                            <p class="post__text"><?php echo $_POST['content']; ?></p>
-                            <div class="post__link-block">
-                                <a href="#" class="post__link">See full persik</a>
-                            </div>
-                        </div>
+                <form action="../index.php" method="post" class="create-post__content">
+                    <div class="title-post-block">
+                        <label class="title-post">Заголовок поста:</label>
+                        <textarea class="title-post-input" placeholder="Привет мир!" name="title"></textarea>
                     </div>
-                    <div class="news__block">
-                        <h1 class="news__title">Recent news</h1>
-                        <div class="new">
-                            <h2 class="new__title">Title</h2>
-                            <p class="new__text">new text hahahah lorem ipsum bla figa ti super mega kruti() Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, amet non debitis minus maxime magni.</p>
-                        </div>
+                    <div class="content-post-block">
+                        <label class="content-post">Содержание поста:</label>
+                        <textarea class="content-post-input" placeholder="Поведай этому миру что-то..." name="content"></textarea>
                     </div>
-                </div>
+                    <div class="upload-post-block">
+                        <button class="post__link btn-post" type="submit" name="upload">Опубликовать пост!</button>
+                    </div>
+                </form>
             </div>
         </main>
     </div>
     <?php
-        $posts = array(
-            array(
-                'Title' => $_POST['title']
-            )
-        )
+
     ?>
 </body>
+
 </html>
